@@ -1,0 +1,7 @@
+.layout {
+  background: var(--background-gradient);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem;
+}

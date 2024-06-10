@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Le Juste Prix",
+    "href": "/juste-prix"
+  },
+  {
+    "name": "Pierre Feuille Ciseaux",
+    "href": "/pierre-feuille-ciseaux"
+  },
+  {
+    "name": "Le Pendu",
+    "href": "/pendu"
+  },
+  {
+    "name": "Le Morpion",
+    "href": "/morpion"
+  },
+  {
+    "name": "La Bonne Paire",
+    "href": "/bonne-paire"
+  },
+  {
+    "name": "Snake",
+    "href": "/snake"
+  },
+  {
+    "name": "Tetris",
+    "href": "/tetris"
+  }
+]
