@@ -1,0 +1,7 @@
+[
+  {
+    "name": "Dependency Injection Framework",
+    "href": "di-framework",
+    "sections": ["Dependency Injection", "Reflexion", "Cycle de vie des objets"]
+  }
+]

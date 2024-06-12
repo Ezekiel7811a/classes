@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import games from "@/public/jsons/projects-games.json";
+import advanced from "@/public/jsons/projects-advanceds.json";
 import {
   background,
   Container,
@@ -11,6 +12,7 @@ import {
   transition,
 } from "@chakra-ui/react";
 import { useRef, useState } from "react";
+import ProjectBox from "./components/main-page/project-box/project-box";
 
 export default function Home() {
   const [selectedSection, setSelectedSection] = useState<State>(State.PROJECT);
@@ -48,19 +50,18 @@ export default function Home() {
         onClick={() => toggleSelectedSection(State.PROJECT)}
       >
         <Text fontSize="xxx-large">Basé sur les projets</Text>
-        <ul
-          style={{
-            paddingLeft: "2em",
-          }}
-        >
-          {games.map(({ name, href }, index) => (
-            <li key={index}>
-              <a href={href} style={{ color: "inherit" }}>
-                {name}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <Flex gap={"2em"} paddingTop={"2em"}>
+          <ProjectBox
+            projectList={games}
+            imgSrc="images/main-page/games.webp"
+            imgAlt="Jeux"
+          />
+          <ProjectBox
+            projectList={advanced}
+            imgSrc="images/main-page/advanced.webp"
+            imgAlt="Jeux"
+          />
+        </Flex>
       </Container>
       <Container
         style={conditionalStyle(State.SECTION)}
