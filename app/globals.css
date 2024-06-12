@@ -1,12 +1,14 @@
 :root {
   --color-primary: #2b4162;
   --color-secondary: #385f71;
-  --color-tertiary: #4b4b4bfd;
+  --color-tertiary: #e1e1e1fd;
   --color-text: #000000;
+  --color-code: #1f1f1f;
+  --color-code-text: #f8f8f2;
   --color-link: #0000ee;
 
-  --background-gradient: linear-gradient(to right, #ffffff, #b2b2b2 50%),
-    linear-gradient(to left, #ffffff, #a9a9a9 50%);
+  --background-gradient: linear-gradient(to right, #f2f2f29b, #d8d8d884 50%),
+    linear-gradient(to left, #ffffff, #d9d9d97e 50%);
   --background-gradient-reverse: linear-gradient(
     90deg,
     var(--color-tertiary),
@@ -15,10 +17,6 @@
   );
 }
 
-body {
-  background: black;
-}
-
-a {
-  text-decoration: underline;
+h1 {
+  font-size: 2rem;
 }

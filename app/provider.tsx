@@ -1,6 +1,12 @@
 "use client";
 
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import {
+  background,
+  Button,
+  ChakraProvider,
+  extendTheme,
+  StyleFunctionProps,
+} from "@chakra-ui/react";
 import { ReactNode } from "react";
 import { useEffect } from "react";
 import Prism from "prismjs";
@@ -15,6 +21,19 @@ const Provider = ({ children }: { children: ReactNode }) => {
   };
 
   const theme = extendTheme({
+    components: {
+      Button: {
+        variants: {
+          // 4. We can override existing variants
+          solid: (props: StyleFunctionProps) => ({
+            bg: props.colorMode === "dark" ? "red.300" : "var(--color-code)",
+            _hover: {
+              bg: "var(--color-primary)",
+            },
+          }),
+        },
+      },
+    },
     styles: {
       global: {
         body: {
@@ -25,8 +44,8 @@ const Provider = ({ children }: { children: ReactNode }) => {
           color: "var(--color-link)",
         },
       },
-      ...config,
     },
+    ...config,
   });
   return (
     <div>

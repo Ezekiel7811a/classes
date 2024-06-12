@@ -1,30 +1,42 @@
 [
   {
     "name": "Le Juste Prix",
-    "href": "/juste-prix"
+    "href": "/juste-prix",
+    "sections": [
+      ".NET",
+      "Variables et Data types",
+      "Inputs et Outputs",
+      "Structures de Contrôle"
+    ]
   },
   {
     "name": "Pierre Feuille Ciseaux",
-    "href": "/pierre-feuille-ciseaux"
+    "href": "/pierre-feuille-ciseaux",
+    "sections": ["Collections"]
   },
   {
     "name": "Le Pendu",
-    "href": "/pendu"
+    "href": "/pendu",
+    "sections": []
   },
   {
     "name": "Le Morpion",
-    "href": "/morpion"
+    "href": "/morpion",
+    "sections": []
   },
   {
     "name": "La Bonne Paire",
-    "href": "/bonne-paire"
+    "href": "/bonne-paire",
+    "sections": []
   },
   {
     "name": "Snake",
-    "href": "/snake"
+    "href": "/snake",
+    "sections": []
   },
   {
     "name": "Tetris",
-    "href": "/tetris"
+    "href": "/tetris",
+    "sections": []
   }
 ]
