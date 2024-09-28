@@ -15,6 +15,11 @@
     "sections": ["Collections"]
   },
   {
+    "name": "Inventaire",
+    "href": "/inventaire",
+    "sections": ["Fonctions", "Objets"]
+  },
+  {
     "name": "Le Pendu",
     "href": "/pendu",
     "sections": []
